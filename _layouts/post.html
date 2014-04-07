@@ -1,0 +1,10 @@
+---
+layout: default
+---
+{% if page.post-link %}
+<h2><a href="{{ page.post-link }}" title="External link">{{ page.title }}</a></h2>
+{% else %}
+<h2>{{ page.title }}</h2>
+{% endif %}
+<p id="tip-info">{{ page.date | date:"%B %e, %Y @ %I:%M %p" }}</p>
+{{ content }}

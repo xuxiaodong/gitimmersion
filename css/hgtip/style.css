@@ -1,0 +1,127 @@
+/* Main layout and basic typography. */
+html, body {
+  background-color: #fbfbfb;
+  color: #111111;
+  font-family: "Palatino Linotype", Calluna-Exljbris, Georgia, "Times New Roman", Times, serif; }
+
+div#main-wrap {
+  width: 38em;
+  margin: 1.5em auto; }
+
+div#content {
+  margin: 1.5em 0em; }
+
+div#excerpt {
+  display: none; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal; }
+
+div.screenshot {
+  text-align: center;
+  margin-bottom: 1.5em; }
+  div.screenshot img {
+    padding: 1em;
+    background-color: #eee; }
+  div.screenshot img.force-border {
+    padding: 0;
+    border: 1px solid black; }
+
+/* Code/monospaced styles. */
+tt, code, kbd, samp, pre {
+  line-height: 24px;
+  font-size: 12px;
+  font-family: Consolas, Monaco, "Courier New", Courier, monospace; }
+
+pre {
+  background-color: #f5f5f5;
+  padding: 11px;
+  line-height: 0px;
+  border: 1px solid #ccc;
+  margin-bottom: 24px;
+  overflow: auto; }
+
+p code, li code {
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  padding: 2px 6px;
+  line-height: 0px;
+  white-space: nowrap; }
+
+/* Header styles. */
+div#header h1 {
+  font-size: 3em;
+  line-height: 1.125em;
+  margin: 0;
+  text-align: center; }
+  div#header h1 a {
+    color: #111111;
+    font-weight: normal;
+    text-shadow: 0px 1px 1px #fff; }
+    div#header h1 a:hover {
+      text-decoration: none;
+      color: #004065; }
+
+p#tagline {
+  color: #666666;
+  text-align: center;
+  margin: 0; }
+
+/* Navigtion styles. */
+p#navigation {
+  text-align: center;
+  margin-bottom: 3em; }
+
+/* Footer styles. */
+div#footer {
+  color: #666666;
+  text-align: center;
+  margin-top: 3em;
+  margin-bottom: 6em; }
+
+/* Link styles. */
+a {
+  color: #004065;
+  text-decoration: none; }
+  a:hover {
+    text-decoration: underline; }
+
+/* Tip listing styles. */
+ol.tip-list {
+  list-style-type: none; }
+  ol.tip-list li {
+    margin-left: 0em; }
+    ol.tip-list li h3.tip-list-title {
+      display: inline; }
+    ol.tip-list li span.tip-list-info {
+      color: #666666;
+      font-style: italic; }
+
+/* Tip page styles. */
+p#tip-info {
+  color: #666666;
+  font-style: italic;
+  margin-top: -1.5em; }
+
+div#tip-comments {
+  margin-top: 3em; }
+
+/* Split pane styles. */
+div.split {
+  vertical-align: top;
+  overflow: auto;
+  width: 100%; }
+  div.split > div {
+    width: 47.5%; }
+  div.split div.right {
+    float: right; }
+
+/* Table of contents styles. */
+div.toc ul {
+  list-style-type: none; }
+  div.toc ul:first-child > li {
+    margin-left: 0; }
+
+/* Screencast styles. */
+div.screencast {
+  text-align: center; }

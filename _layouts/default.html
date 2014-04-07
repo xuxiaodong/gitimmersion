@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        {% if page.title == 'Cover' %}
+        <title>Perl 程序员应该知道的事</title>
+        {% else %}
+        <title>Perl 程序员应该知道的事: {{ page.title }}</title>
+        {% endif %}
+        <link rel="shortcut icon" href="{{ site.baseurl }}favicon.ico">
+        <!-- syntax highlighting css -->
+        <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}css/syntax.css">
+        <!-- homepage css -->
+        <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}css/hgtip/aal.css">
+        <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}css/hgtip/calluna.css">
+        <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}css/hgtip/style.css">
+    </head>
+    <body>
+        <div id="main-wrap">
+            <div id="header">
+                <h1><a href="{{ site.baseurl }}" title="Perl 程序员应该知道的事">Perl 程序员应该知道的事</a></h1>
+            </div>
+            <p id="navigation">
+                <a href="{{ site.baseurl }}index.html">cover</a> &mdash;
+                <a href="{{ site.baseurl }}contents.html">contents</a> &mdash;
+                <a href="{{ site.baseurl }}about.html">about</a>
+            </p>
+            <div id="content">
+                {{ content }}
+            </div>
+            <div id="footer">
+                follow me: <a href="https://twitter.com/xuxiaodong">twitter</a> / <a href="https://github.com/xuxiaodong">github</a> / <a href="http://www.linkedin.com/pub/xiaodong-xu/62/319/7">linkedin</a>
+            </div>
+        </div>
+    </body>
+</html>
