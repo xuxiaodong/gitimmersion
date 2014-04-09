@@ -36,7 +36,7 @@ task :new, :title do |t, args|
     post.puts ""
     post.puts ""
   end
-  system "vim #{filename}"
+  #system "vim #{filename}"
 end
 
 # requires ruby 1.9 :(
