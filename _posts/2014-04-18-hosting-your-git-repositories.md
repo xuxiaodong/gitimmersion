@@ -28,3 +28,9 @@ $ ls
 ```
 
 你应当看到 hello 项目的拷贝。
+
+### 推送到 Git daemon
+
+如果你想要推送到 Git daemon 仓库，添加 `--enable=receive-pack`
+到 `git daemon` 命令。小心，因为此服务器没有授权，任何人
+都能推送到你的仓库。
